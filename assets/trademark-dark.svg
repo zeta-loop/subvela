@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" fill="none">
+  <!-- For light backgrounds: Sub = dark charcoal, Vela = bright blue -->
+  <path d="M 110 28 L 110 132 L 198 80 Z" fill="#60A5FA" opacity="0.4"/>
+  <rect x="52" y="158" width="176" height="10" rx="5" fill="#60A5FA" opacity="0.8"/>
+  <rect x="80" y="182" width="120" height="8" rx="4" fill="#3B82F6" opacity="0.4"/>
+
+  <text x="245" y="108" font-family="'Geist', 'SF Pro Display', 'Segoe UI', sans-serif" font-size="58" letter-spacing="-1" fill="#1E293B"><tspan font-weight="200">Sub</tspan><tspan font-weight="600" fill="#3B82F6">Vela</tspan></text>
+
+  <rect x="52" y="145" width="540" height="1.5" rx="0.75" fill="#3B82F6" opacity="0.15"/>
+</svg>

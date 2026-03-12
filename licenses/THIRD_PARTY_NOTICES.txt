@@ -1,0 +1,83 @@
+SubVela Third-Party Notices
+===========================
+
+This project uses third-party components that remain under their own licenses.
+These notices cover both components bundled directly with the Windows app and translation model artifacts downloaded by the app at runtime.
+
+1. FFmpeg and FFprobe
+---------------------
+Bundled files:
+- ffmpeg.exe
+- ffprobe.exe
+
+Observed bundled version:
+- ffmpeg version 8.0.1-full_build-www.gyan.dev
+
+Observed build characteristics:
+- The bundled binary reports a "full_build" from www.gyan.dev.
+- The bundled binary reports "--enable-gpl" and related GPL-enabled options.
+- The gyan.dev Windows builds page states that all of its builds are licensed as GPLv3.
+
+Upstream references used for this notice:
+- FFmpeg legal page: https://ffmpeg.org/legal.html
+- Gyan Windows builds page: https://www.gyan.dev/ffmpeg/builds/
+- Release source reference for FFmpeg 8.0.1: https://github.com/FFmpeg/FFmpeg/commit/894da5ca7d
+
+Distribution notes:
+- Include this notice file with the installer and installed application.
+- Keep the FFmpeg name intact.
+- If you publish a website download button for this installer, add a nearby notice that the download includes FFmpeg under GPLv3 and link users to the corresponding source location.
+- If you replace ffmpeg.exe or ffprobe.exe with a different build, update this notice before distribution.
+
+2. libmpv
+---------
+Bundled file:
+- libmpv-2.dll
+
+Observed bundled version metadata:
+- Product name: mpv
+- File version: v0.41.0-252-gc401ef9c3
+
+Upstream references used for this notice:
+- mpv copyright summary: https://raw.githubusercontent.com/mpv-player/mpv/master/Copyright
+- mpv source snapshot indicated by bundled version string: https://github.com/mpv-player/mpv/commit/c401ef9c3
+- Windows binary release matching the bundled version string: https://github.com/shinchiro/mpv-winbuild-cmake/releases/tag/20260304
+
+License note:
+- mpv upstream states that the mpv program is GPLv2+ by default.
+- Upstream also states that libmpv can be built under LGPLv2.1+ when built without GPL-only files.
+- The bundled version string matches the Shinchiro Windows release tag 20260304, but the exact binary package variant and build options used for the checked-in dll should still be recorded alongside the binary if you keep redistributing it.
+
+Distribution notes:
+- Record that the current binary came from the Shinchiro mpv-winbuild-cmake 20260304 release and keep the exact package filename with the project release notes.
+- If you replace libmpv-2.dll with a tracked upstream build, update this notice with the exact download/source URL and the license that applies to that binary.
+
+3. NLLB Translation Model and Tokenizer
+--------------------------------------
+Downloaded files at runtime:
+- CTranslate2 model snapshot from `entai2965/nllb-200-distilled-600M-ctranslate2`
+- Tokenizer files from `facebook/nllb-200-distilled-600M`
+
+Observed upstream license metadata:
+- Hugging Face model page for `entai2965/nllb-200-distilled-600M-ctranslate2`: `cc-by-nc-4.0`
+- Hugging Face model page for `facebook/nllb-200-distilled-600M`: `cc-by-nc-4.0`
+
+Upstream references used for this notice:
+- CTranslate2-converted model page: https://huggingface.co/entai2965/nllb-200-distilled-600M-ctranslate2
+- Base Meta model page: https://huggingface.co/facebook/nllb-200-distilled-600M
+- Model paper reference: https://arxiv.org/abs/2207.04672
+- CC BY-NC 4.0 license text: https://creativecommons.org/licenses/by-nc/4.0/
+
+Usage note from the upstream model card:
+- NLLB-200 is described as a research model and the model card says it is not released for production deployment.
+- The model card also says it is not intended for certified translation or domain-specific translation such as medical or legal use.
+
+Distribution and compliance notes:
+- SubVela does not currently bundle these NLLB files in the Windows installer; they are downloaded on first use for `Local (Free)` translation.
+- If you redistribute the downloaded model artifacts yourself, review and comply with the applicable CC BY-NC 4.0 terms.
+- If you use SubVela in a commercial context, review whether the non-commercial restriction on the downloaded NLLB artifacts affects that use.
+- If you replace the repo ids used by the app, update this notice with the exact upstream source and license.
+
+4. No Warranty
+--------------
+Each third-party component is provided under its own license and without warranty to the extent allowed by that license.

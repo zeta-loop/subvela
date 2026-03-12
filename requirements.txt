@@ -1,0 +1,25 @@
+customtkinter>=5.2.0
+tkinterdnd2>=0.4.0
+
+Pillow>=10.0.0
+opencv-python>=4.8.0
+fonttools>=4.0.0
+
+faster-whisper>=1.0.0
+groq>=0.4.0
+openai>=1.0.0
+google-genai>=1.0.0
+anthropic>=0.49.0
+transformers>=4.49.0
+sentencepiece>=0.2.0
+langdetect>=1.0.9
+
+python-dotenv>=1.0.0
+keyring>=25.0.0
+
+python-mpv>=1.0.0
+python-vlc>=3.0.0
+
+# External runtime tools installed separately:
+# - FFmpeg / ffprobe must be available on PATH
+# - VLC desktop app or libmpv binaries are still required for video playback backends

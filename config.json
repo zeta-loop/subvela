@@ -1,0 +1,9 @@
+{
+    "store_gemini_api_key_locally": false,
+    "store_groq_api_key_locally": false,
+    "store_openai_api_key_locally": false,
+    "store_claude_api_key_locally": false,
+    "transcription_provider": "local",
+    "translation_provider": "local_nllb",
+    "whisper_model": "base"
+}
